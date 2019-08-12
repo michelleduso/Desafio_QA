@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://dump.getpostman.com/blog/users/1",
+  "type": "object",
+  "properties": {
+    "created_at": {
+      "id": "http://dump.getpostman.com/blog/users/1/created_at",
+      "type": "integer"
+    },
+    "id": {
+      "id": "http://dump.getpostman.com/blog/users/1/id",
+      "type": "integer"
+    },
+    "token": {
+      "id": "http://dump.getpostman.com/blog/users/1/token",
+      "type": "string"
+    },
+    "username": {
+      "id": "http://dump.getpostman.com/blog/users/1/username",
+      "type": "string"
+    }
+  },
+  "required": [
+    "created_at",
+    "id",
+    "token",
+    "username"
+  ]
+}
