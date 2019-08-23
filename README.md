@@ -55,7 +55,7 @@ public class TestesAPI {
 	}
   
   
-  **Screma:**
+  **Schema:**
   
   {
   "$schema": "http://json-schema.org/draft-04/schema#",
