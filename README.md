@@ -94,7 +94,7 @@ Rest-assured(framework)
 Intellij(ferramenta de desenvolvimento)
 
 
-Gihub:
+Github:
 
 Motivo de escolha:
 O recurso de criar um repositório privado gratuito.
