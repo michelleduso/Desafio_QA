@@ -1,7 +1,7 @@
 # Desafio_QA_NTConsult
 Automatizando uma API Rest
 
-Hostória:
+**História:**
 
 Abordei os pontos que devem ser levados em consideração durante os testes de uma API REST. O objetivo é mostrar como é fácil automatizar esse tipo de teste usando o framework Rest-Assured.
 
@@ -55,7 +55,7 @@ public class TestesAPI {
 	}
   
   
-  Screma:
+  **Screma:**
   
   {
   "$schema": "http://json-schema.org/draft-04/schema#",
@@ -87,20 +87,20 @@ public class TestesAPI {
   ]
 }
 
-Tecnologias:
+**Tecnologias:**
 
 Java (linguagem)
 Rest-assured(framework)
 Intellij(ferramenta de desenvolvimento)
 
 
-Github:
+**Github:**
 
 Motivo de escolha:
 O recurso de criar um repositório privado gratuito.
 
 
-Bibliotecas utilizadas:
+**Bibliotecas utilizadas:**
 
 import static com.jayway.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
