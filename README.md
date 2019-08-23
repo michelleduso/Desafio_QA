@@ -1,2 +1,108 @@
 # Desafio_QA_NTConsult
 Automatizando uma API Rest
+
+Hostória:
+
+Abordei os pontos que devem ser levados em consideração durante os testes de uma API REST. O objetivo é mostrar como é fácil automatizar esse tipo de teste usando o framework Rest-Assured.
+
+Rest-Assured é um framework open-source que possui suporte para automatizar os métodos GET, POST, PUT, DELETE, HEAD, OPTIONS e TRACE de uma API e permitir fazer validações no header, body e schema da resposta.
+
+A URL a ser utilizada é de um serviço disponibilizado pelo Postman.
+
+Foi criado um método que validará o envio de uma requisição do tipo POST. O serviço que ao receber um JSON com os atributos usuário e senha, retornará uma mensagem informando que o usuário foi criado com sucesso.
+
+public class TestesAPI {
+	
+	public TestesAPI(){
+		baseURI = "http://dump.getpostman.com/blog/users";
+	}
+  
+ O método Given entende que a URL a ser chamada é à definida no construtor da classe) passando no body um JSON com os atributos username e password, quando (when) for por meio do método POST, então (then) o resultado esperado é que o status de retorno seja igual a 200 e que o atributo message enviado no retorno contenha a frase “User created successfully” indicando que o usuário foi criado com sucesso.
+
+  
+  @Test
+	/*Chama o serviço pelo metodo POST*/
+	public void testCriaUsuario() {
+		String myJson = "{\"username\":\"abhinav\",\"password\": \"abc\"}";
+    	
+         given()
+           .contentType("application/json")
+    	   .body(myJson)
+    	 .when()
+    	   .post("/")
+    	 .then()
+    	   .statusCode(200)
+    	   .body("message", containsString("User created successfully"));	 
+	}
+  
+ Novo método na nossa classe de testes chamado “TestConsultaUsuario” onde será validado se os dados do usuário estão corretos e se a reposta veio com a estrutura esperada conforme definido no schema do serviço.
+ 
+ @Test
+	/*Chama o serviço pelo metodo GET*/
+	public void testConsultaUsuario() {
+		
+		 given()
+		 .when()
+		    .get("/1")
+		 .then()
+		    .statusCode(200)
+		    .body("created_at", is(1396006450))
+		    .body("id", is(1))
+		    .body("token", equalTo("JbaGIjDQMyvbTyRNsAqmOMijTnpUez"))
+		    .body("username", equalTo("prakhar1989"))
+		    .assertThat()
+		       .body(matchesJsonSchemaInClasspath("schema_exemplo.json"));
+	}
+  
+  
+  Screma:
+  
+  {
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://dump.getpostman.com/blog/users/1",
+  "type": "object",
+  "properties": {
+    "created_at": {
+      "id": "http://dump.getpostman.com/blog/users/1/created_at",
+      "type": "integer"
+    },
+    "id": {
+      "id": "http://dump.getpostman.com/blog/users/1/id",
+      "type": "integer"
+    },
+    "token": {
+      "id": "http://dump.getpostman.com/blog/users/1/token",
+      "type": "string"
+    },
+    "username": {
+      "id": "http://dump.getpostman.com/blog/users/1/username",
+      "type": "string"
+    }
+  },
+  "required": [
+    "created_at",
+    "id",
+    "token",
+    "username"
+  ]
+}
+
+Tecnologias:
+
+Java (linguagem)
+Rest-assured(framework)
+Intellij(ferramenta de desenvolvimento)
+
+
+Gihub:
+
+Motivo de escolha:
+O recurso de criar um repositório privado gratuito.
+
+
+Bibliotecas utilizadas:
+
+import static com.jayway.restassured.RestAssured.*;
+import static org.hamcrest.Matchers.*;
+import static com.jayway.restassured.module.jsv.JsonSchemaValidator.*;
+import org.junit.Test;
