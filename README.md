@@ -1,5 +1,5 @@
-# Desafio_QA_NTConsult
-Automatizando uma API Rest
+# Desafio_QA
+Automatizando API Rest
 
 **História:**
 
@@ -53,6 +53,9 @@ public class TestesAPI {
 		    .assertThat()
 		       .body(matchesJsonSchemaInClasspath("schema_exemplo.json"));
 	}
+	
+	
+	
   
   
   **Schema:**
@@ -87,6 +90,34 @@ public class TestesAPI {
   ]
 }
 
+
+**Dependências usadas**
+
+<dependências>
+  <dependência>
+      <groupId> com.jayway.restassured </ groupId>
+      <artifactId> com certeza de repouso </ artifactId>
+      <version> 2.4.1 </ version>
+      <scope> test </ scope>
+  </ dependency>
+  <dependência>
+      <groupId> com.jayway.restassured </ groupId>
+      <artifactId> json-path </ artifactId>
+      <version> 2.4.1 </ version>
+  </ dependency>
+  <dependência>
+      <groupId> com.jayway.restassured </ groupId>
+      <artifactId> json-schema-validator </ artifactId>
+      <version> 2.4.1 </ version>
+      <scope> test </ scope>
+  </ dependency>
+  <dependência>
+      <groupId> junit </ groupId>
+      <artifactId> junit </ artifactId>
+      <versão> 4.12 </ version>
+  </ dependency>		
+</ dependencies>
+
 **Tecnologias:**
 
 Java (linguagem)
@@ -100,7 +131,7 @@ Motivo de escolha:
 O recurso de criar um repositório privado gratuito.
 
 
-**Bibliotecas utilizadas:**
+**Gerenciador de dependências:**
 
 import static com.jayway.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
