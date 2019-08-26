@@ -58,7 +58,7 @@ public class TestesAPI {
 	
   
   
-  Schema:
+  **Schema:**
   ```
   {
   "$schema": "http://json-schema.org/draft-04/schema#",
@@ -91,6 +91,9 @@ public class TestesAPI {
 }
 
 
+
+
+```
 **Dependências usadas**
 ```
 <dependências>
@@ -120,17 +123,23 @@ public class TestesAPI {
 
 
 
+
+```
 **Tecnologias:**
 ```
 Java (linguagem)
 Rest-assured(framework)
 Intellij(ferramenta de desenvolvimento)
+```
+
 
 
 **Github:**
 ```
 Motivo de escolha:
 O recurso de criar um repositório privado gratuito.
+```
+
 
 
 **Gerenciador de dependências:**
