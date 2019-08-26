@@ -145,15 +145,20 @@ O recurso de criar um repositório privado gratuito.
 **Gerenciador de dependências:**
 
 **O que é o Maven?**
-```
+
 Maven, uma palavra que é um acumulador de conhecimento, foi criada como uma tentativa de simplificar os processos de construção no projeto Turbina de Jacarta. Vários projetos, cada um com todos os seus arquivos de compilação Ant, todos os diferentes e os JARs não foram encontrados no CVS. O que é uma maneira padrão de fazer os projetos, uma clara idéia de projeto de consistência, uma maneira fácil de publicar informações sobre o projeto e uma maneira de compartilhar os JARs em vários projetos.
 O resultado é uma máquina que pode ser usada para criar e organizar todo o projeto em Java. Esperamos que tenhamos feito algo que facilite o trabalho cotidiano dos desenvolvedores.
-```
+
 [Referência] ( https://maven.apache.org/what-is-maven.html )
 
 
+
+
 **JUnit**
-```
-O JUnit é um framework open-source, que se assemelha ao raio de testes software java, criado por Erich Gamma e Kent Beck, com suporte à criação de testes automatizados na linguagem de programação Java. Esse framework facilita a criação e manutenção do código para a automação de testes com apresentação dos resultados.
-```
+
+**O que é o JUnit?**
+
+O JUnit é uma estrutura simples e de código aberto para gravar e executar testes repetitivos. É uma instância da arquitetura xUnit para estruturas de teste de unidade. Os recursos do JUnit incluem:
+Afirmações para o teste de resultados dos testes de dados para teste de dados comuns Testar os testes para o teste de testes JUnit foi escrito por Erich Gamma e Kent Beck.
+
 [Referência] ( https://pt.wikipedia.org/wiki/JUnit )
