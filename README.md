@@ -59,7 +59,7 @@ public class TestesAPI {
   
   
   Schema:
-  
+  ```
   {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "id": "http://dump.getpostman.com/blog/users/1",
@@ -139,3 +139,4 @@ import static com.jayway.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 import static com.jayway.restassured.module.jsv.JsonSchemaValidator.*;
 import org.junit.Test;
+```
