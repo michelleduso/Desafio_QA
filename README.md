@@ -35,7 +35,7 @@ public class TestesAPI {
     	   .body("message", containsString("User created successfully"));	 
 	}
   
- Novo método na nossa classe de testes chamado “TestConsultaUsuario” onde será validado se os dados do usuário estão corretos e se a reposta veio com a estrutura esperada conforme definido no schema do serviço.
+ Novo método na classe de testes chamado “TestConsultaUsuario” onde será validado se os dados do usuário estão corretos e se a reposta veio com a estrutura esperada conforme definido no schema do serviço.
  
  @Test
 	/*Chama o serviço pelo metodo GET*/
